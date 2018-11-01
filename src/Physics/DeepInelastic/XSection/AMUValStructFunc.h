@@ -45,24 +45,23 @@ public:
 protected:
 
   void Init         (void);
-  void ReadBYParams (void);
 
   // override part of the DISStructureFuncModel implementation
   // to compute all the corrections applied by the Bodek-Yang model.
-  double ScalingVar (const Interaction * i) const;
-  void   KFactors   (const Interaction * i, double & kuv,
-                         double & kdv, double & kus, double & kds) const;
+  // double ScalingVar (const Interaction * i) const;
+  // void   KFactors   (const Interaction * i, double & kuv,
+  //                    double & kdv, double & kus, double & kds) const;
 
   // Bodek-Yang model-specific parameters
 
-  double fA;     ///< better scaling var parameter A
-  double fB;     ///< better scaling var parameter B
-  double fCsU;   ///< U-sea K factor parameter
-  double fCsD;   ///< D-sea K factor parameter
-  double fCv1U;  ///< U-val K factor parameter
-  double fCv2U;  ///< U-val K factor parameter
-  double fCv1D;  ///< D-val K factor parameter
-  double fCv2D;  ///< D-val K factor parameter
+  //  double fA;     ///< better scaling var parameter A
+  //  double fB;     ///< better scaling var parameter B
+  //  double fCsU;   ///< U-sea K factor parameter
+  //  double fCsD;   ///< D-sea K factor parameter
+  //  double fCv1U;  ///< U-val K factor parameter
+  //  double fCv2U;  ///< U-val K factor parameter
+  //  double fCv1D;  ///< D-val K factor parameter
+  //  double fCv2D;  ///< D-val K factor parameter
 };
 
 }         // genie namespace
